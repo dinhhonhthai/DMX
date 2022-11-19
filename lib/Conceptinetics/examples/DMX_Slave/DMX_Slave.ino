@@ -57,7 +57,7 @@
 
 
 // Configure a DMX slave controller
-DMX_Slave dmx_slave ( DMX_SLAVE_CHANNELS );
+// DMX_Slave dmx_slave ( DMX_SLAVE_CHANNELS );
 
 // If you are using an IO pin to control the shields RXEN
 // the use the following line instead
