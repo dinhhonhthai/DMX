@@ -18,6 +18,7 @@ boolean check_setid = false;
 static byte gwip[] = { 192,168,1,2 };
 static char set_id[13]={'?','S','e','t','a','d','d','r','e','s','s','^','*'};
 //16
+ 
 // Ethernet MAC address - must be unique on your network
 static byte mymac[] = { 0x70,0x69,0x69,0x2D,0x30,0x31 };
  DMX_Master        dmx_master ( DMX_MASTER_CHANNELS, RXEN_PIN );
@@ -63,7 +64,7 @@ void setup() {
   // EEPROM.write(200,200);
   // delay(10);
    pinMode(7,OUTPUT);
-
+// Serial1.begin(9600);
 
   slave = EEPROM.read(200);
   if (slave > 110) slave = 200;
